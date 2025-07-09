@@ -1,53 +1,148 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
-     <style>
-  .font-inter {
-    font-family: 'Inter', sans-serif;
-  }
-</style>
-    <title>Event </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <title>Event</title>
 </head>
-<body>
-    <!-- Navigation  -->
 
-    <div class="navbar flex items-center w-full ">
-        <img class=" cursor-pointer sm:m-4 sm:h-10 w-10 " src="./images/logo.png" alt=""><h1 class="text-black text-xl">Days <br> Coding</h1>
-        
+<body class="font-inter">
 
-        <div class="menu mx-auto  bg-[#e4e4e7] flex gap-x-6 p-2 rounded-full border border-gray-400 font-inter font-bold" >
-           <a href="#" class="hover:text-orange-500 hover:underline transition duration-300">Intro</a>
+    <!-- 🌐 Navbar -->
+    <div class="navbar md:sticky md:top-0 md:z-50 flex flex-col sm:flex-row items-center justify-between px-4 py-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <img src="./images/logo.png" alt="Logo" class="h-10 w-10" />
+            <h1 class="text-black text-lg sm:text-xl leading-tight">Days<br />Coding</h1>
+        </div>
+
+        <!-- Menu -->
+        <div
+            class="menu mt-4 sm:mt-0 sm:mx-auto bg-gray-200 flex gap-6 px-6 py-2 rounded-full border border-gray-400 font-bold">
+            <a href="#" class="hover:text-orange-500 hover:underline transition duration-300">Intro</a>
             <a href="#" class="hover:text-orange-500 hover:underline transition duration-300">Pricing</a>
             <a href="#" class="hover:text-orange-500 hover:underline transition duration-300">Features</a>
             <a href="#" class="hover:text-orange-500 hover:underline transition duration-300">Testimonials</a>
-
         </div>
 
-        <button class="rounded-full border bg-green-950 text-amber-100 font-mono text-base text-center sm:w-fit p-4 m-5"> Join Community</button>
-
-
+        <!-- Button -->
+        <button class="mt-4 sm:mt-0 bg-green-950 text-amber-100 font-mono px-4 py-2 rounded-full">
+            Join Community
+        </button>
     </div>
-<!-- section 1 -->
 
-<div class="section1 flex " >
-    <div class="firstPart  w-2/2 p-50">
-        <h1 class="text-8xl text-green-600 font-black font-sans"> ATTEND LIVE CLASSES </h1>
-        <h1 class="text-8xl text-green-900 font-black font-sans">EVERY WEEK</h1>
-        <h5> Join founders, freelancers ,designers,FAANG Engineers ,indie hackers  and<br> 
-            more in our 24/7 Whatsapp group for less than a cup of coffee
-        </h5>
-        <button class="rounded-full border bg-green-950 text-amber-100 font-mono text-base text-center sm:w-fit p-4 m-5"> Join 24/7 Whatsapp + discord for $5/month</button>
-    </div>
-    <div class="secondpart flex mr-30 sm:w-full h-180 mt-20 ">
-        <img src="./images/webinar.webp"class="w-full h-full object-contain">
-    </div>
-    
-</div>
+    <!-- 🧩 Section 1 -->
+    <div class="section1 flex flex-col lg:flex-row justify-center items-center px-4 sm:px-10 mt-10 gap-10">
+        <!-- Text -->
+        <div class="firstPart text-center lg:text-left max-w-xl">
+            <h1 class="text-4xl sm:text-5xl font-black text-green-600 leading-tight">ATTEND LIVE CLASSES</h1>
+            <h1 class="text-4xl sm:text-5xl font-black text-green-900 leading-tight mb-4">EVERY WEEK</h1>
+            <p class="mb-4 text-gray-700">
+                Join founders, freelancers, designers, FAANG Engineers, indie hackers <br />
+                and more in our 24/7 Whatsapp group for less than a cup of coffee
+            </p>
+            <button class="bg-green-950 text-amber-100 font-mono px-6 py-3 rounded-full">
+                Join 24/7 Whatsapp + Discord for $5/month
+            </button>
+        </div>
 
+        <!-- Image -->
+        <div class="secondpart">
+            <img src="./images/webinar.webp" alt="Webinar" class="w-full max-w-md h-auto object-contain mx-auto" />
+        </div>
+    </div>
+
+    <!-- 🧪 Features Section -->
+    <div class="features mt-6 px-2">
+        <div
+            class="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-6 sm:gap-16 bg-green-100 p-6 border-2 border-amber-200 rounded-2xl shadow-sm max-w-6xl mx-auto">
+
+            <div class="flex items-center  gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                </svg>5+Guides for Free
+            </div>
+
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                </svg> Exclusive Courses & Projects
+            </div>
+            <div class="flex items-center  gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                </svg> 1:1 Mentorship
+            </div>
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 text-green-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                </svg> 24*7 Whatsapp Support
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials  -->
+    <div class="testimonials  flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-32 px-4 sm:px-0 py-8">
+        <div class="first text-center max-w-md border-b-2 border-cyan-200 md:border-0 " >
+            <img src="./images/profile-1.png" class="w-20 h-20 mx-auto rounded-full">
+            <p class="mt-4 text-gray-700">
+                "This community has been a game-changer for <br>
+                my career. The exclusive courses and <br>
+                personalized guidance from expert mentors <br>
+                have helped me take my coding skills to the next level."
+            </p>
+            <h2 class="font-black p-2">Aryan Singh</h2>
+            <h3 class="pl-2 text-sm text-gray-600">SWE at Google</h3>
+            <div class="text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+        </div>
+
+         <div class="second text-center max-w-md border-b-2 border-cyan-200 md:border-0 ">
+            <img src="./images/profile-2.png" class="w-20 h-20 mx-auto rounded-full">
+            <p class="mt-4 text-gray-700">
+                "This community has been a game-changer for <br>
+                my career. The exclusive courses and <br>
+                personalized guidance from expert mentors <br>
+                have helped me take my coding skills to the next level."
+            </p>
+            <h2 class="font-black p-2">Neha Gupta</h2>
+            <h3 class="pl-2 text-sm text-gray-600">SWE at Facebook</h3>
+            <div class="text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+        </div>
+
+         <div class="third text-center max-w-md   ">
+            <img src="./images/profile-3.png" class="w-20 h-20 mx-auto rounded-full">
+            <p class="mt-4 text-gray-700">
+                "This community has been a game-changer for <br>
+                my career. The exclusive courses and <br>
+                personalized guidance from expert mentors <br>
+                have helped me take my coding skills to the next level."
+            </p>
+            <h2 class="font-black p-2">John Wick</h2>
+            <h3 class="pl-2 text-sm text-gray-600">SWE at Uber</h3>
+            <div class="text-yellow-500 text-lg">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        
+    </div>
+
+    <!-- Pricing -->
 
 </body>
+
 </html>
